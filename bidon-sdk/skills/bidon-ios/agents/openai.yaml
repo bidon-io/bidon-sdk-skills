@@ -1,0 +1,7 @@
+interface:
+  display_name: "Bidon iOS SDK"
+  short_description: "Integrate Bidon SDK into iOS apps"
+  default_prompt: "Use $bidon-ios to integrate or configure the Bidon SDK in this iOS project."
+
+policy:
+  allow_implicit_invocation: true

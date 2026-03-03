@@ -1,0 +1,7 @@
+interface:
+  display_name: "Bidon Android SDK"
+  short_description: "Integrate Bidon SDK into Android apps"
+  default_prompt: "Use $bidon-android to integrate or configure the Bidon SDK in this Android project."
+
+policy:
+  allow_implicit_invocation: true

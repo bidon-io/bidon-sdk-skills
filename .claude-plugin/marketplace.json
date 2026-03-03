@@ -1,0 +1,14 @@
+{
+  "name": "bidon-sdk-skills",
+  "owner": {
+    "name": "bidon-io"
+  },
+  "plugins": [
+    {
+      "name": "bidon-sdk",
+      "source": "./bidon-sdk",
+      "description": "Bidon SDK integration skills for Android, iOS, and Unity",
+      "tags": ["bidon", "ad-monetization", "android", "ios", "unity", "sdk", "mediation"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "bidon-sdk",
+  "version": "0.1.0",
+  "description": "Bidon SDK integration skills for Android, iOS, and Unity",
+  "author": {
+    "name": "bidon-io",
+    "url": "https://github.com/bidon-io"
+  },
+  "homepage": "https://docs.bidon.org",
+  "repository": "https://github.com/bidon-io/bidon-sdk-skills",
+  "license": "Apache-2.0",
+  "keywords": ["bidon", "ad-monetization", "android", "ios", "unity", "sdk", "mediation"]
+}
