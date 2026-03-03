@@ -1,0 +1,7 @@
+interface:
+  display_name: "Using Bidon SDK on Unity"
+  short_description: "Using Bidon SDK on Unity"
+  default_prompt: "Use $using-bidon-unity-sdk to integrate or configure Bidon SDK on Unity."
+
+policy:
+  allow_implicit_invocation: true
