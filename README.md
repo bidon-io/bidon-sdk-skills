@@ -1,14 +1,14 @@
 # Bidon SDK Skills
 
-Agent skills for integrating the [Bidon](https://bidon.org) ad monetization SDK. Works with Claude Code and OpenAI Codex.
+Skills for using [Bidon](https://bidon.org) ad monetization SDK on Android, iOS, and Unity. Works with Claude Code and OpenAI Codex.
 
 ## Skills
 
 | Skill | Platform | Description |
 |-------|----------|-------------|
-| bidon-android | Android | Gradle setup, ad formats, adapter config, regulations |
-| bidon-ios | iOS | CocoaPods/SPM, ad formats, adapter config, regulations |
-| bidon-unity | Unity | Plugin setup, ad formats, FirstLook/Postbid, regulations |
+| using-bidon-android-sdk | Android | Gradle, ad formats, adapters, regulations |
+| using-bidon-ios-sdk | iOS | CocoaPods/SPM, ad formats, adapters, regulations |
+| using-bidon-unity-sdk | Unity | Plugin setup, ad formats, FirstLook/Postbid, regulations |
 
 ## Install
 
@@ -31,7 +31,7 @@ Agent skills for integrating the [Bidon](https://bidon.org) ad monetization SDK.
 
 Ask Codex to install:
 
-> Install bidon-android skill from bidon-io/bidon-sdk-skills
+> Install using-bidon-android-sdk skill from bidon-io/bidon-sdk-skills
 
 Or manually:
 
@@ -50,6 +50,6 @@ Skills activate automatically when your task matches the skill description. Just
 
 Or invoke directly:
 
-**Claude Code:** `/bidon-android`
+**Claude Code:** `/using-bidon-android-sdk`
 
-**Codex:** `$bidon-android`
+**Codex:** `$using-bidon-android-sdk`

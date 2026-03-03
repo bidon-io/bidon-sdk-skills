@@ -10,6 +10,6 @@ uv run generate <url> [skills...] [--output-dir DIR] [--dry-run]  # generate ski
 
 # Examples
 uv run generate http://localhost:3000                          # all platforms
-uv run generate http://localhost:3000 bidon-android bidon-ios  # specific platforms
+uv run generate http://localhost:3000 using-bidon-android-sdk using-bidon-ios-sdk  # specific platforms
 uv run generate http://localhost:3000 --dry-run                # preview only
 ```

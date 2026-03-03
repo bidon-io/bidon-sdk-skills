@@ -8,7 +8,7 @@ description: Project structure and data flow
 .claude-plugin/marketplace.json  → Marketplace registration (owner: bidon-io)
 bidon-sdk/
   .claude-plugin/plugin.json     → Plugin metadata (name, version, targets)
-  skills/bidon-{android,ios,unity}/
+  skills/using-bidon-{android,ios,unity}-sdk/
     SKILL.md                     → Skill entry point (YAML front matter + markdown)
     agents/openai.yaml           → OpenAI Codex agent config
     references/*.md              → Auto-generated platform docs

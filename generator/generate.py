@@ -107,7 +107,7 @@ def transform_ref(texts: list[str], platform: str, is_shared: bool) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate skill references from docs server.")
     parser.add_argument("base_url", help="Docs server URL (e.g. http://localhost:3000)")
-    parser.add_argument("skills", nargs="*", help="Skills to generate (e.g. bidon-android). Defaults to all.")
+    parser.add_argument("skills", nargs="*", help="Skills to generate (e.g. using-bidon-android-sdk). Defaults to all.")
     parser.add_argument("--output-dir", default="bidon-sdk/skills", help="Output directory (default: bidon-sdk/skills)")
     parser.add_argument("--dry-run", action="store_true", help="Preview without writing files")
     args = parser.parse_args()
@@ -118,11 +118,11 @@ def main() -> int:
     if args.skills:
         platforms = set()
         for skill in args.skills:
-            platform = skill.removeprefix("bidon-")
+            platform = skill.removeprefix("using-bidon-").removesuffix("-sdk")
             if platform not in PLATFORMS:
                 parser.error(
                     f"unknown skill {skill!r} "
-                    f"(valid: {', '.join(f'bidon-{p}' for p in sorted(PLATFORMS))})"
+                    f"(valid: {', '.join(f'using-bidon-{p}-sdk' for p in sorted(PLATFORMS))})"
                 )
             platforms.add(platform)
     else:
@@ -152,7 +152,7 @@ def main() -> int:
         if platform not in platforms:
             continue
         items = refs[platform]
-        ref_dir = output_dir / f"bidon-{platform}" / "references"
+        ref_dir = output_dir / f"using-bidon-{platform}-sdk" / "references"
         print(f"\n=== {platform} ({len(items)} refs) -> {ref_dir} ===")
 
         for name, sources in sorted(items.items()):
@@ -180,7 +180,7 @@ def main() -> int:
     if shared_files:
         print(f"\n=== shared ({len(shared_files)} files) ===")
         for platform in sorted(platforms):
-            ref_dir = output_dir / f"bidon-{platform}" / "references"
+            ref_dir = output_dir / f"using-bidon-{platform}-sdk" / "references"
             for src in shared_files:
                 dest = ref_dir / src.name
                 if args.dry_run:
