@@ -7,8 +7,8 @@
     {
       "name": "bidon-sdk",
       "source": "./bidon-sdk",
-      "description": "Bidon SDK integration skills for Android, iOS, and Unity",
-      "tags": ["bidon", "ad-monetization", "android", "ios", "unity", "sdk", "mediation"]
+      "description": "Skills for using Bidon SDK on Android, iOS, and Unity",
+      "tags": ["bidon", "bidon-sdk", "bidon-android-sdk", "bidon-ios-sdk", "bidon-unity-sdk", "android", "ios", "unity", "sdk", "ads", "ad-monetization", "mediation", "auction", "postbid", "banner", "interstitial", "rewarded"]
     }
   ]
 }
