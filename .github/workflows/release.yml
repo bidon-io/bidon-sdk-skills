@@ -1,0 +1,20 @@
+name: Release
+on:
+  push:
+    tags: [ "v*" ]
+  workflow_dispatch:
+    inputs:
+      skills:
+        description: Skills to release (comma-separated or "all")
+        type: string
+        default: all
+      endpoint:
+        description: Docs server URL
+        type: string
+        default: https://docs.bidon.org
+jobs:
+  release:
+    name: Package and publish plugin
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "TODO"
