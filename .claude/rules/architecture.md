@@ -12,8 +12,11 @@ bidon-sdk/
     SKILL.md                     → Skill entry point (YAML front matter + markdown)
     agents/openai.yaml           → OpenAI Codex agent config
     references/*.md              → Auto-generated platform docs
+    evaluations.json             → Evaluation scenarios (query + expected behaviors)
+    test-fixtures/               → Minimal project files for evaluation context
 generator/
   generate.py                    → CLI: fetches llms.txt, extracts per-platform content
+  evaluate.py                    → CLI: runs evaluations via claude -p, scores results
   templates/                     → Jinja2 templates for SKILL.md and openai.yaml
 ```
 
