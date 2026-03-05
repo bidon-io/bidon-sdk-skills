@@ -1,0 +1,20 @@
+[project]
+name = "bidon-sdk-skills"
+version = "0.1.0"
+description = "Skill generator for Bidon SDK — produces Agent Skills from docs.bidon.org"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["generator"]
+
+[project.scripts]
+generate = "generator.generate:main"
+
+[dependency-groups]
+dev = ["skills-ref"]

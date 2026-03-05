@@ -1,0 +1,22 @@
+name: Validate Skills
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      skills:
+        description: Skills to validate (comma-separated or "all")
+        type: string
+        default: all
+      endpoint:
+        description: Docs server URL
+        type: string
+        default: https://docs.bidon.org
+jobs:
+  validate:
+    name: Check skill structure
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "TODO"
